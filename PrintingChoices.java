@@ -1,5 +1,5 @@
 public class PrintingChoices {
-  public static void main ( String [] args ) {
+  public static void main ( String[] args ) {
     System.out.println( "Alpha" );
     System.out.println( "Bravo" );
 
