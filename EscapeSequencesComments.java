@@ -10,9 +10,16 @@ public class EscapeSequencesComments {
       Quick wafting zephyrs vex bold Jim. */
     System.out /* testing */ .println( "Hard to believe, eh?" );
     System.out.println( "Surprised?  /*abcde */ Or what did you expect?" );
-    System.out.println( "\\ // -=- \\ //" );
+    System.out.prin/* I am called Third */tln( "\\ // -=- \\ //" );
     System.out.println( "\\\\ \\\\\\ \\\\\\\\" ); //it takes 2 to make 1
     System.out.print( "I hope you understand \"escape sequences\" now.\n" );
     // and comments. :)
   }
 }
+
+// putting a comment in the middle of println will not compile!
+
+/* line13 looked like this when the failure happened
+System.out.prinSTARTBLOCKCOMMENT I am called Third ENDBLOCKCOMMENTtln( "\\ // -=- \\ //" );
+
+   */
