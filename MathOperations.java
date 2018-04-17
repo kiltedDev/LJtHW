@@ -1,6 +1,6 @@
 public class MathOperations {
   public static void main ( String[] args ) {
-    int a, b, c, d, e, f, g;
+    int a, b, c, d, e, f, g, plaid, tartan;
     double x, y, z;
     String one, two, both;
 
@@ -18,6 +18,10 @@ public class MathOperations {
     System.out.println( "b/2 is " + f );
     g = b % 10;
     System.out.println( "b%10 is " + g );
+    plaid = 17-a/2;
+    System.out.println( "Dozen is " + plaid );
+    tartan = (-18+b)*3;
+    System.out.println( "Style is " + tartan );
 
     x = 1.1;
     System.out.println( "\nx is " + x );
@@ -31,6 +35,6 @@ public class MathOperations {
     two = "house";
     both = one + two;
     System.out.println( both );
-    
+
   }
 }
