@@ -38,5 +38,19 @@ public class VariableChangeShortcuts {
     i++;
     j--;
     System.out.println( "i: " + i + "\tj: " + j + "\n" );
+
+    i = 5;
+    System.out.println( "i: " + i );
+    i -= 5;
+    System.out.println( "i: " + i + "\n" );
+
+    i = 5;
+    System.out.println( "i: " + i );
+    i++;
+    i++;
+    i++;
+    i++;
+    i++;
+    System.out.println( "i: " + i + "\n" );
   }
 }
