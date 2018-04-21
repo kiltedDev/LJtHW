@@ -9,8 +9,8 @@ public class WeaselOrNot {
     System.out.println( "Type the word \"weasel\", please." );
     word = keyboard.next();
 
-    yep = word.equals("weasel");
-    nope = ! word.equals("weasel");
+    yep = "weasel".equals(word);
+    nope = ! "weasel".equals(word);
 
     System.out.println( "You typed what was requested: " + yep );
     System.out.println( "You ignored polite instructions: " + nope );
