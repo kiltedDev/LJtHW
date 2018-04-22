@@ -29,5 +29,35 @@ public class AgeMessages {
       System.out.println( "\ttoo young run for President of the U.S." );
       System.out.println( "\t\t(How sad!)" );
     }
+
+    if ( age >= 65 ) {
+      System.out.println( "\told enough to retire" );
+    }
+
+    if ( age >= 13 ) {
+      System.out.println( "\told enough to create a facebook account" );
+    }
+
+    if ( age >= 16 ) {
+      System.out.println( "\told enough to get a driver's license" );
+    }
+
+    if ( age >= 18 ) {
+      System.out.println( "\told enough to get a tattoo" );
+    }
+
+    if ( age >= 21 ) {
+      System.out.println( "\told enough to get a whiskey" );
+    }
+
+    if ( age >= 36 ) {
+      System.out.println( "\told enough run for President of the U.S." );
+    }
+
+    if ( age < 65 ) {
+      System.out.println( "\ttoo young to retire" );
+    }
   }
 }
+
+//This is me not cheating and just using else statements...
