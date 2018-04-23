@@ -3,10 +3,15 @@ import java.util.Scanner;
 public class BMICategories {
   public static void main ( String[] args ) {
     Scanner keyboard = new Scanner(System.in);
-    double bmi;
+    double bmi, h, m;
 
-    System.out.print( "Enter your BMI: " );
-    bmi = keyboard.nextDouble();
+    System.out.print( "Enter your height(m): " );
+    h = keyboard.nextDouble();
+
+    System.out.print( "Enter your mass(kg): " );
+    m = keyboard.nextDouble();
+
+    bmi = m / (h*h);
 
     System.out.print( "BMI category: " );
     if (bmi < 15.0 ) {
