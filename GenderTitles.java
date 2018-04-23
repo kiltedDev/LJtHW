@@ -9,7 +9,7 @@ public class GenderTitles {
     String first = keyboard.next();
     System.out.print( "Last name: " );
     String last = keyboard.next();
-    System.out.print( "Gender (M/F): " );
+    System.out.print( "Gender (M/F/X): " );
     String gender = keyboard.next();
     System.out.print( "Age: " );
     int age = keyboard.nextInt();
@@ -25,8 +25,10 @@ public class GenderTitles {
         } else {
           title = "Ms.";
         }
-      } else {
+      } else  if (gender.equals("M") ) {
         title = "Mr.";
+      } else {
+        title = "Xr.";
       }
     }
     System.out.println("\n"+title+" "+last);
