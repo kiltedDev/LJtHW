@@ -4,8 +4,18 @@ public class SafeSquareRoot {
   public static void main ( String[] args ) {
     Scanner keyboard = new Scanner(System.in);
     double x, y;
+    String readiness;
 
-    System.out.print( "Give me a number, and I'll find it's square root. " );
+    System.out.print( "Are you ready?!? (Y/N) " );
+    readiness = keyboard.next();
+
+    while ( ! readiness.toLowerCase().equals("y") ) {
+      System.out.println( "\nYou'd better get ready!" );
+      System.out.print( "Are you ready?!? (Y/N) " );
+      readiness = keyboard.next();
+    }
+
+    System.out.print( "\nGive me a number, and I'll find it's square root. " );
     System.out.print( "(No negatives, please.) " );
     x = keyboard.nextDouble();
 
