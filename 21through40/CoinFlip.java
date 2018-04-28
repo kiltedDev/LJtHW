@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class CoinFlip {
   public static void main( String[] args ) {
     Scanner keyboard = new Scanner(System.in);
-    String coin, again = "y";
+    String coin, again;
     int streak = 0;
     boolean gotHeads;
 
-    while ( again.toLowerCase().equals("y") ) {
+    do {
       gotHeads = Math.random() < 0.6;
 
       if ( gotHeads ) {
@@ -29,7 +29,7 @@ public class CoinFlip {
         streak = 0;
         again = "n";
       }
-    }
+    } while ( again.toLowerCase().equals("y") );
 
     System.out.println("Final Score: " + streak );
   }
