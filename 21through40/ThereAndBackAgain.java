@@ -3,7 +3,7 @@ public class ThereAndBackAgain {
     System.out.println("Here.");
     erebor();
     System.out.println("Back first time.");
-    erebor();
+    // erebor();
     System.out.println("Back second time.");
   }
 
