@@ -14,7 +14,8 @@ public class ShapeArea {
       System.out.println("1) Triangle");
       System.out.println("2) Circle");
       System.out.println("3) Rectangle");
-      System.out.println("4) Quit");
+      System.out.println("4) Square");
+      System.out.println("5) Quit");
       System.out.print("> ");
       choice = keyboard.nextInt();
 
@@ -35,12 +36,15 @@ public class ShapeArea {
         int q = keyboard.nextInt();
         System.out.print("\nWidth: ");
         int w = keyboard.nextInt();
-        area = computeRectangleArea(q,w);
-        System.out.println("The area is "+area);
-      } else if (choice != 4) {
+        System.out.println("The area is "+computeRectangleArea(q,w) );
+      } else if (choice == 4) {
+        System.out.print("\nSide: ");
+        int side = keyboard.nextInt();
+        System.out.println("The area is "+computeSquareArea(side) );
+      } else if (choice != 5) {
         System.out.print("\nERROR!");
       }
-    } while (choice != 4);
+    } while (choice != 5);
   }
 
   public static double computeTriangleArea(int base, int height) {
@@ -55,7 +59,11 @@ public class ShapeArea {
     return A;
   }
 
-  public static double computeRectangleArea(int length, int width) {
+  public static int computeRectangleArea(int length, int width) {
     return (length * width);
+  }
+
+  public static double computeSquareArea(int side) {
+    return Math.pow(side, 2);
   }
 }
