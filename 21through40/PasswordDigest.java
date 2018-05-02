@@ -1,4 +1,5 @@
-/*
+// see previous notes about this not working.
+
 import java.security.MessageDigest;
 import java.util.Scanner;
 import javax.xml.bind.DatatypeConverter;
@@ -19,7 +20,3 @@ public class PasswordDigest {
     System.out.println( hash );
   }
 }
-
-*/
-
-// This uses a deprecated library, AFAICT
