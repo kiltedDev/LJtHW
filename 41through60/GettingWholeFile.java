@@ -31,3 +31,6 @@ public class GettingWholeFile {
     System.out.println( caps + " words start with capitals in "+ fn2);
   }
 }
+
+// Please, remain calm.  This is only a test.
+//the program does count caps in a comment.
