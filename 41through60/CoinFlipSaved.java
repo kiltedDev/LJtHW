@@ -52,6 +52,12 @@ public class CoinFlipSaved {
       System.out.print("Your name: ");
       bestName = keyboard.next();
       best = streak;
+
+      // Same this name and high score to the file
+      PrintWriter out = new PrintWriter(f);
+      out.println(bestName);
+      out.println(best);
+      out.close();
     } else if (streak == best) {
       System.out.println("That ties the high score.  Cool.");
     } else {
@@ -59,10 +65,5 @@ public class CoinFlipSaved {
       System.out.println(streak+" if you want a high score.");
     }
 
-    // Same this name and high score to the file
-    PrintWriter out = new PrintWriter(f);
-      out.println(bestName);
-      out.println(best);
-    out.close();
   }
 }
