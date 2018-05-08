@@ -1,8 +1,8 @@
 public class NestingLoops {
   public static void main ( String[] args ) {
     //This is #1 - I'll call it "CN"
-    for (char c='A'; c < 'E'; c++) {
-      for ( int n=1; n <= 3; n++) {
+    for ( int n=1; n <= 3; n++) {
+      for (char c='A'; c < 'E'; c++) {
         System.out.println(c + " " + n);
       }
     }
@@ -14,7 +14,7 @@ public class NestingLoops {
       for (int b=1; b<=3; b++) {
         System.out.print("(" + a + "," + b + ") ");
       }
-      //* you will add a line of code here
+      System.out.println("");
     }
 
     System.out.println("\n");
