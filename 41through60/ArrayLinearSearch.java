@@ -5,6 +5,7 @@ public class ArrayLinearSearch {
     Scanner keyboard = new Scanner(System.in);
     int[] orderNumbers = {12345, 54321, 101010, 8675309, 31415, 271828};
     int toFind;
+    boolean found = false;
 
     System.out.print("There are "+orderNumbers.length);
     System.out.println(" orders in the database.");
@@ -21,7 +22,11 @@ public class ArrayLinearSearch {
     for ( int num: orderNumbers ) {
       if (num == toFind ) {
         System.out.println( num + " found.");
+        found = true;
       }
+    }
+    if (!found) {
+      System.out.println( "Apologies, we did not find the order.");
     }
   }
 }
