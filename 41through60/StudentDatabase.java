@@ -7,7 +7,7 @@ class Student {
 public class StudentDatabase {
   public static void main( String[] args ) {
     Student[] db;
-    db = new Student[3];
+    db = new Student[4];
 
     db[0] = new Student();
     db[0].name = "Esteban";
@@ -24,6 +24,11 @@ public class StudentDatabase {
     db[2].credits = 132;
     db[2].gpa = 3.72;
 
+    db[3] = new Student();
+    db[3].name = "Hiddleston";
+    db[3].credits = 27;
+    db[3].gpa = 4.99;
+
     for ( int i=0; i<db.length; i++) {
       System.out.println("Name:\t" + db[i].name);
       System.out.println("\tCredit hours: " + db[i].credits);
@@ -38,5 +43,14 @@ public class StudentDatabase {
     }
 
     System.out.println(db[maxLoc].name + " has the highest GPA.");
+
+    int newKid = 0;
+    for ( int i = 1; i < db.length; i++ ) {
+      if (db[i].credits<db[newKid].credits ) {
+        newKid = i;
+      }
+    }
+
+    System.out.println(db[newKid].name + " is the new kid at school.");
   }
 }
