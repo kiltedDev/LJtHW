@@ -11,9 +11,11 @@ class Card {
 public class PickACard {
   public static void main ( String[] args ) {
     Card[] deck = buildDeck();
-    // displayDeck(deck);
+    displayDeck(deck);
+    shuffleDeck(deck);
+    displayDeck(deck);
 
-    int chosen = (int)(Math.random()*deck.length);
+    int chosen = (int)(Math.random  ()*deck.length);
     Card picked = deck[chosen];
 
     System.out.println("You picked a " + picked + " out of the deck, ");
@@ -49,6 +51,22 @@ public class PickACard {
   public static void displayDeck( Card[] deck ) {
     for (Card c : deck) {
       System.out.println(c.value + "\t" + c);
+    }
+  }
+
+
+  public static void shuffleDeck( Card[] deck ) {
+    Card card1, card2;
+    int place1, place2, i;
+    for (i = 0; i < 1000; i++) {
+      place1 = (int)(Math.random()*deck.length);
+      do {
+        place2 = (int)(Math.random()*deck.length);
+      } while (place1 == place2);
+      card1 = deck[place1];
+      card2 = deck[place2];
+      deck[place2] = card1;
+      deck[place1] = card2;
     }
   }
 }
